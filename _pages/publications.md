@@ -5,16 +5,11 @@ layout: single
 author_profile: true
 ---
 
-## Selected Publications
+## Publications
 
-### 2025
-**R. Urfin**, *Title of Your Latest Paper*, *Journal or Conference Name*, 2025.  
-[🔗 PDF](#) · [📄 BibTeX](#)
-
-### 2024
-**R. Urfin**, *Another Example Paper*, *Proceedings of XYZ Conference*, 2024.  
-[🔗 PDF](#)
-
----
-
-*This list will be updated as new work becomes available.*
+{% for pub in site.data.publications %}
+- **{{ pub.authors }}**  
+  *{{ pub.title }}*  
+  _{{ pub.venue }}_  
+  {% if pub.url %}[🔗 Link]({{ pub.url }}){% endif %}
+{% endfor %}
