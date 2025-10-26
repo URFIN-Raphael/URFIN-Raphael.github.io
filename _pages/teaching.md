@@ -6,7 +6,7 @@ author_profile: true
 ---
 # Teaching
 
-Welcome to my teaching page! Add your courses, lectures, or tutorials here.
+List your courses, lectures, or workshops here.
 
 
 
