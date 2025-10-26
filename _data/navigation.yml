@@ -1,8 +1,9 @@
-- title: "About"
-  url: /
-- title: "Publications"
-  url: /publications/
-- title: "Teaching"
-  url: /teaching/
-- title: "Contact"
-  url: /contact/
+main:
+  - title: "About"
+    url: /
+  - title: "Publications"
+    url: /publications/
+  - title: "Teaching"
+    url: /teaching/
+  - title: "Contact"
+    url: /contact/
