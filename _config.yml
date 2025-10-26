@@ -57,15 +57,7 @@ defaults:
 
 # --- Navigation ---
 # Define top menu items (create corresponding files in _pages/)
-nav:
-  - title: "About"
-    url: /
-  - title: "Publications"
-    url: /publications/
-  - title: "Teaching"
-    url: /teaching/
-  - title: "Contact"
-    url: /contact/
+navigation: main
 
 # --- Plugins ---
 plugins:
@@ -102,13 +94,5 @@ exclude:
   - /test
   - /docs
 
-# --- Footer ---
-footer:
-  links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/URFIN-Raphael"
-    - label: "Google Scholar"
-      icon: "fas fa-fw fa-graduation-cap"
-      url: "https://scholar.google.com/citations?user=j7IYAOIAAAAJ&hl=fr"
+
 
