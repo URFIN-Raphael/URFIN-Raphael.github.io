@@ -4,7 +4,7 @@
 
 # --- Theme ---
 remote_theme: "mmistakes/minimal-mistakes@4.26.2"
-minimal_mistakes_skin: "aqua" # other options: default, air, aqua, dark, mint, plum, sunrise
+minimal_mistakes_skin: "default" # other options: default, air, aqua, dark, mint, plum, sunrise
 
 # --- Site Settings ---
 locale: "en-US"
