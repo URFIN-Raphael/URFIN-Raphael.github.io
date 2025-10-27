@@ -1,8 +1,9 @@
 ---
-layout: single
 title: "Publications"
+layout: publications
 permalink: /publications/
 ---
+
 # Publications
 
-Here is a list of my research publications.
+Your publications will appear here using `publications.bib`.
