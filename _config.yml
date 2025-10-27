@@ -1,21 +1,14 @@
-# -----------------------------------------------------------------------------
-# Minimal Mistakes Academic Website Configuration
-# -----------------------------------------------------------------------------
-
-# --- Theme ---
+# Minimal Mistakes configuration
 remote_theme: "mmistakes/minimal-mistakes@4.26.2"
-minimal_mistakes_skin: "default" # other options: default, air, aqua, dark, mint, plum, sunrise
+minimal_mistakes_skin: "default"
 
-# --- Site Settings ---
-locale: "en-US"
 title: "Raphaël Urfin - PhD Student"
 name: "Raphaël Urfin"
 description: "PhD Student in Machine Learning and Statistical Physics"
 url: "https://urfin-raphael.github.io"
-baseurl: ""  # do not change for user.github.io sites
+baseurl: ""
 repository: "URFIN-Raphael/URFIN-Raphael.github.io"
 
-# --- Author Information ---
 author:
   name: "Raphaël Urfin"
   avatar: "/assets/images/profile.png"
@@ -35,10 +28,9 @@ author:
       icon: "fab fa-fw fa-github"
       url: "https://github.com/URFIN-Raphael"
 
-# --- Defaults ---
 defaults:
   - scope:
-      path: "_pages"
+      path: ""
       type: pages
     values:
       layout: single
@@ -55,13 +47,8 @@ defaults:
       share: false
       related: false
 
-
-
-# --- Navigation ---
-# Define top menu items (create corresponding files in _pages/)
 navigation: main
 
-# --- Plugins ---
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
@@ -69,7 +56,6 @@ plugins:
   - jekyll-gist
   - jekyll-include-cache
 
-# --- Other Settings ---
 markdown: kramdown
 highlighter: rouge
 permalink: /:categories/:title/
@@ -77,24 +63,9 @@ paginate: 5
 paginate_path: /page:num/
 timezone: Europe/Paris
 
-# --- HTML Compression ---
 compress_html:
   clippings: all
   ignore:
     envs: development
-
-# --- Exclude unnecessary files ---
-exclude:
-  - README.md
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-  - vendor
-  - tmp
-  - .sass-cache
-  - .jekyll-cache
-  - /test
-  - /docs
-
 
 
