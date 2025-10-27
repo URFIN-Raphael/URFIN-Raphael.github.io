@@ -1,9 +1,9 @@
 ---
-layout: single
 title: "Teaching"
+layout: single
 permalink: /teaching/
-author_profile: true
 ---
+
 # Teaching
 
-Courses and tutorials I have taught.
+Details about your teaching activities go here.
