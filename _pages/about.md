@@ -1,7 +1,9 @@
 ---
-title: "About Me"
-permalink: /
+title: "About"
 layout: single
-author_profile: true
+permalink: /about/
 ---
-Hello there !
+
+# About Me
+
+Welcome! I am Raphaël Urfin, PhD Student in Machine Learning and Statistical Physics. (In construction)
