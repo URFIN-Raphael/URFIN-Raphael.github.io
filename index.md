@@ -1,7 +1,8 @@
 ---
 layout: home
-title: "Raphaël Urfin"
-author_profile: true
+title: "Welcome"
 ---
 
-I am **Raphaël Urfin**, a PhD student in Machine Learning and Statistical Physics at École Normale Supérieure (PSL), Paris. (Website still in construction)
+# Welcome
+
+This is the main page of my academic website. (In construction)
