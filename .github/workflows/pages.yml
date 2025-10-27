@@ -1,22 +1,48 @@
-name: Deploy Pages
+name: Build and Deploy Jekyll site
+
 on:
   push:
     branches:
       - master
 
 jobs:
-  deploy:
+  build-deploy:
     runs-on: ubuntu-latest
     permissions:
       contents: read
       pages: write
       id-token: write
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/deploy-pages@v4
+      # Step 1: Checkout the repository
+      - name: Checkout
+        uses: actions/checkout@v3
 
+      # Step 2: Set up Ruby
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.2
 
+      # Step 3: Install dependencies
+      - name: Install dependencies
+        run: |
+          gem install bundler
+          bundle install
+
+      # Step 4: Build the site into ./_site
+      - name: Build Jekyll site
+        run: bundle exec jekyll build -d ./_site
+
+      # Step 5: Upload the _site folder as artifact
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: github-pages
+          path: ./_site
+
+      # Step 6: Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
         with:
-          folder: _site
+          artifact-name: github-pages
+
