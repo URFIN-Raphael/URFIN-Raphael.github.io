@@ -1,9 +1,8 @@
 ---
 title: "Contact"
-layout: single
 permalink: /contact/
+layout: single
+author_profile: true
 ---
 
-# Contact
-
-You can reach me at [email@example.com](mailto:email@example.com)
+You can reach me at: **your.email@domain.com**
