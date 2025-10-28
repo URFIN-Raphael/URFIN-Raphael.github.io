@@ -1,9 +1,10 @@
 ---
 title: "Publications"
-layout: publications
 permalink: /publications/
+layout: single
+author_profile: true
 ---
 
-# Publications
+Here are my academic publications.
 
-Your publications will appear here using `publications.bib`.
+*(You can later format this with a bib file or Markdown list.)*
