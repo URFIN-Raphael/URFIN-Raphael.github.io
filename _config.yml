@@ -1,4 +1,3 @@
-# Minimal Mistakes configuration
 remote_theme: "mmistakes/minimal-mistakes@4.26.2"
 minimal_mistakes_skin: "default"
 
@@ -12,18 +11,12 @@ repository: "URFIN-Raphael/URFIN-Raphael.github.io"
 author:
   name: "Raphaël Urfin"
   avatar: "/assets/images/profile.png"
-  bio: "PhD Student in Machine Learning and Statistical Physics at École Normale Supérieure PSL"
+  bio: "PhD Student in Machine Learning and Statistical Physics at ENS-PSL"
   location: "Paris, France"
   links:
     - label: "Google Scholar"
       icon: "fas fa-fw fa-graduation-cap"
-      url: "https://scholar.google.com/citations?user=j7IYAOIAAAAJ&hl=fr"
-    - label: "ORCID"
-      icon: "fas fa-fw fa-id-badge"
-      url: "https://orcid.org/0009-0008-2289-8356"
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
-      url: "https://linkedin.com/in/raphaël-urfin-812b53265"
+      url: "https://scholar.google.com/citations?user=j7IYAOIAAAAJ"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/URFIN-Raphael"
@@ -36,19 +29,6 @@ defaults:
       layout: single
       author_profile: true
 
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: false
-      comments: false
-      share: false
-      related: false
-
-navigation: main
-
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
@@ -56,16 +36,6 @@ plugins:
   - jekyll-gist
   - jekyll-include-cache
 
-markdown: kramdown
-highlighter: rouge
-permalink: /:categories/:title/
-paginate: 5
-paginate_path: /page:num/
-timezone: Europe/Paris
-
-compress_html:
-  clippings: all
-  ignore:
-    envs: development
+navigation: main
 
 
