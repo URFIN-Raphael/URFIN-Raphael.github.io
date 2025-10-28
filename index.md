@@ -1,8 +1,8 @@
 ---
-layout: home
-title: "Welcome"
+layout: single
+title: "About Me"
+author_profile: true
 ---
 
-# Welcome
-
-This is the main page of my academic website. (In construction)
+Welcome!  
+I'm **Raphaël Urfin**, a PhD student in Machine Learning and Statistical Physics at ENS-PSL.
