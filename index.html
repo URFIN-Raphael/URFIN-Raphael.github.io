@@ -20,6 +20,7 @@
           <nav class="main-nav">
             <a href="#about">About</a>
             <a href="#research">Research</a>
+            <a href="#phd-summary">PhD summary</a>
             <a href="#publications">Publications</a>
             <a href="#cv">CV</a>
             <a href="#contact">Contact</a>
@@ -53,6 +54,30 @@
       </ul>
     </section>
 
+    <section id="phd-summary" class="card">
+      <h2>PhD summary</h2>
+
+      <p>
+        My PhD focuses on score-based diffusion models, a class of generative models that progressively corrupt data with noise (the forward process) and then learn a time-dependent "score" (the gradient of the log-density) to reverse that process and generate high-quality samples. These models have proven highly effective in practice for image, audio and video generation and are increasingly applied to scientific computing problems where traditional approaches struggle.
+      </p>
+
+      <p>
+        The work uses tools and intuition from statistical physics and disordered systems to build simple, analytically tractable models that illuminate how diffusion models learn, generalize and sometimes memorize training data. I study the denoising score-matching loss used to train the score, the resulting training dynamics, and how implicit regularization introduced by optimization affects the learned solutions.
+      </p>
+
+      <p>
+        Two main directions guide the project:
+      </p>
+      <ol>
+        <li><strong>Memorization vs. generalization</strong> — Understanding when the learned score memorizes training samples and when it generalizes to produce novel samples. I investigate dataset-size-driven transitions, the role of model capacity, and the implicit bias of training dynamics that can favor smoother, more generalizable solutions than the empirical score.</li>
+        <li><strong>Feature learning</strong> — Characterizing how the model progressively captures structure in the target distribution (for example resolving modes), whether this happens through cascades of transitions, and how architecture and sample complexity influence recovery of relative weights between modes/classes.</li>
+      </ol>
+
+      <p>
+        The research combines rigorous analysis of simplified models, numerical experiments and synthesis of recent empirical findings to explain phenomena such as dataset-size transitions in memorization, implicit dynamical regularization, and progressive feature discovery in generative modeling.
+      </p>
+    </section>
+
     <section id="publications" class="card">
       <h2>Selected publications</h2>
       <p>Below is my current publication list. For the full list, see my Google Scholar profile or OpenReview.</p>
@@ -67,7 +92,7 @@
     <section id="cv" class="card">
       <h2>CV</h2>
       <p>You can link a PDF of your CV here when available.</p>
-      <p><a href="cv.pdf" target="_blank" rel="noopener">Download CV (PDF)</a></p>
+      <p><a href="Resume_2025-1.pdf" target="_blank" rel="noopener">Download CV (PDF)</a></p>
     </section>
 
     <section id="contact" class="card">
