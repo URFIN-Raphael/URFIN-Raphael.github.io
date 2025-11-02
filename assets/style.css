@@ -24,3 +24,11 @@ a{color:var(--accent)}
   .main-nav{display:flex;flex-wrap:wrap;gap:0.5rem}
   .site-title{font-size:1.25rem}
 }
+.avatar {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  margin-right: 20px;
+}
