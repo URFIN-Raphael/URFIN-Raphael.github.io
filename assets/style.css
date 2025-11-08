@@ -1,34 +1,200 @@
-/* Simple, readable, responsive stylesheet */
-:root{
-  --bg:#ffffff;
-  --muted:#666;
-  --accent:#0b5fff;
-  --card:#f8f9fb;
-  --max-width:900px;
-  --radius:8px;
-  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+/* ----------------------------------------------------------
+   Raphaël Urfin — Personal Academic Website Stylesheet
+   Clean · Responsive · Accessible · GitHub Pages Friendly
+-------------------------------------------------------------*/
+
+:root {
+  --bg: #ffffff;
+  --card: #f8f9fb;
+  --muted: #555;
+  --accent: #0b5fff;
+  --max-width: 900px;
+  --radius: 10px;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  --transition: 0.2s ease;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
-*{box-sizing:border-box}
-html,body{margin:0;padding:0;background:var(--bg);color:#111;line-height:1.5}
-.wrap{max-width:var(--max-width);margin:0 auto;padding:1.25rem}
-.site-header{background:linear-gradient(90deg,#f7f9ff,#ffffff);padding:1.25rem 0;border-bottom:1px solid #eee}
-.site-title{margin:0;font-size:1.6rem}
-.subtitle{margin:0;color:var(--muted);font-size:0.95rem}
-.main-nav{margin-top:0.5rem}
-.main-nav a{margin-right:0.75rem;color:var(--accent);text-decoration:none;font-weight:600}
-.card{background:var(--card);padding:1rem;border-radius:var(--radius);box-shadow:0 1px 2px rgba(0,0,0,0.02);margin-top:1rem}
-.site-footer{border-top:1px solid #eee;padding:1rem 0;margin-top:2rem;color:var(--muted);font-size:0.9rem}
-a{color:var(--accent)}
-@media (max-width:640px){
-  .main-nav{display:flex;flex-wrap:wrap;gap:0.5rem}
-  .site-title{font-size:1.25rem}
+/* ------------------------------
+   Base styles
+-------------------------------*/
+* {
+  box-sizing: border-box;
 }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: #111;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+.wrap {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 1.25rem;
+}
+
+/* ------------------------------
+   Header & Navigation
+-------------------------------*/
+.site-header {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(8px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid #eee;
+  padding: 1rem 0;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.site-title {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.subtitle {
+  margin: 0.25rem 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.main-nav {
+  margin-top: 0.5rem;
+}
+
+.main-nav a {
+  margin-right: 1rem;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+  position: relative;
+  transition: color var(--transition);
+}
+
+.main-nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0%;
+  height: 2px;
+  background: var(--accent);
+  transition: width var(--transition);
+}
+
+.main-nav a:hover {
+  color: #0048d6;
+}
+
+.main-nav a:hover::after {
+  width: 100%;
+}
+
+/* ------------------------------
+   Avatar & Hero Image
+-------------------------------*/
 .avatar {
-  width: 150px;
-  height: 150px;
+  width: 140px;
+  height: 140px;
   object-fit: cover;
   border-radius: 50%;
-  border: 2px solid #ccc;
-  margin-right: 20px;
+  border: 2px solid #ddd;
+  flex-shrink: 0;
 }
+
+/* ------------------------------
+   Content Cards
+-------------------------------*/
+.card {
+  background: var(--card);
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  margin-top: 1.5rem;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+}
+
+h2 {
+  font-size: 1.3rem;
+  margin-top: 0;
+  color: #222;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 0.3rem;
+}
+
+/* ------------------------------
+   Links & Buttons
+-------------------------------*/
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+
+a:hover {
+  color: #0048d6;
+}
+
+.button {
+  display: inline-block;
+  background: var(--accent);
+  color: #fff;
+  padding: 0.6em 1.1em;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background var(--transition);
+}
+
+.button:hover {
+  background: #0048d6;
+}
+
+/* ------------------------------
+   Footer
+-------------------------------*/
+.site-footer {
+  border-top: 1px solid #eee;
+  padding: 1.5rem 0;
+  margin-top: 3rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+/* ------------------------------
+   Responsive adjustments
+-------------------------------*/
+@media (max-width: 640px) {
+  .main-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .site-title {
+    font-size: 1.3rem;
+  }
+
+  .avatar {
+    width: 110px;
+    height: 110px;
+  }
+}
+
