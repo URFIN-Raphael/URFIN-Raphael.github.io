@@ -3,86 +3,142 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Raphaël Urfin — PhD student</title>
-  <meta name="description" content="Raphaël Urfin — PhD student at École Normale Supérieure PSL">
-  <link rel="stylesheet" href="assets/style.css">
-  <link rel="icon" href="data:;base64,iVBORw0KGgo=" >
+  <title>Raphaël Urfin</title>
+  <meta name="description" content="Raphaël Urfin — PhD student at École Normale Supérieure (PSL). Statistical physics of diffusion models." />
+  <meta name="author" content="Raphaël Urfin" />
+  <meta property="og:title" content="Raphaël Urfin" />
+  <meta property="og:description" content="PhD student at École Normale Supérieure (PSL). Statistical physics of diffusion models." />
+  <meta property="og:type" content="profile" />
+  <link rel="stylesheet" href="assets/style.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ctext y='13' font-size='14' font-family='serif'%3ER%3C/text%3E%3C/svg%3E" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="wrap header-inner">
+  <div class="wrap">
+
+    <header class="site-header">
       <div class="hero">
-        <!-- Avatar placeholder: upload assets/photo.jpg to display your photo -->
-        <img class="avatar" src="assets/photo.jpg" alt="Raphaël Urfin" onerror="this.style.display='none'">
-        <div>
+        <img class="avatar" src="assets/photo.jpg" alt="Photo of Raphaël Urfin" onerror="this.style.display='none'">
+        <div class="hero-text">
           <h1 class="site-title">Raphaël Urfin</h1>
-          <p class="subtitle">PhD student — École Normale Supérieure PSL</p>
-          <nav class="main-nav">
+          <p class="subtitle">PhD student, École Normale Supérieure — PSL</p>
+          <nav class="main-nav" aria-label="Primary">
             <a href="#about">About</a>
+            <a href="#news">News</a>
             <a href="#research">Research</a>
             <a href="#publications">Publications</a>
-            <a href="#cv">Resume</a>
+            <a href="#cv">CV</a>
             <a href="#contact">Contact</a>
           </nav>
         </div>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <main class="wrap">
-    <section id="about" class="card">
-      <h2>About</h2>
-      <p>
-        I am a first-year PhD student at École Normale Supérieure–PSL in Paris, supervised by Giulio Biroli (ENS) and Marc Mézard (Bocconi University). I am based at the Centre de Sciences des Données and at the Laboratoire de Physique de l’ENS (LPENS).
-        The goal of my PhD is to understand theoretically Diffusion Models, a state-of-the-art method in generative AI.
-      </p>
-    </section>
+    <main>
 
-    <section id="research" class="card">
-      <h2>Research</h2>
-      <p>
-        Current topic: A statistical physics approach to Diffusion models.
-      </p>
-      <ul>
-        <li>Theoretical foundations of Diffusion Models</li>
-        <li>The generalization/memorization transition in diffusion Models</li>
-      </ul>
-    </section>
+      <section id="about">
+        <h2>About</h2>
+        <p>
+          I am a first-year PhD student at <a href="https://www.ens.psl.eu/" target="_blank" rel="noopener">École Normale Supérieure&nbsp;– PSL</a>
+          in Paris, supervised by <a href="https://www.lpens.ens.psl.eu/membres/giulio-biroli/" target="_blank" rel="noopener">Giulio Biroli</a> (ENS) and
+          <a href="https://faculty.unibocconi.eu/marcmezard/" target="_blank" rel="noopener">Marc Mézard</a> (Bocconi University). I am based at the
+          <em>Centre de Sciences des Données</em> and the <em>Laboratoire de Physique de l’ENS</em> (LPENS).
+        </p>
+        <p>
+          My research aims to build a theoretical understanding of <strong>diffusion models</strong>, currently the dominant approach to generative AI,
+          using tools from statistical physics.
+        </p>
+      </section>
 
+      <section id="news">
+        <h2>News</h2>
+        <ul class="news">
+          <li>
+            <time datetime="2025-12">Dec 2025</time>
+            <span>Our paper <em>Why Diffusion Models Don’t Memorize</em> received an <strong>Oral</strong> and a <strong>Best Paper Award</strong> at NeurIPS 2025.</span>
+          </li>
+          <li>
+            <time datetime="2025-09">Sept 2025</time>
+            <span>Started my PhD at ENS–PSL with Giulio Biroli and Marc Mézard.</span>
+          </li>
+        </ul>
+      </section>
 
-    <section id="publications" class="card">
-      <h2>Publications</h2>
-      <ul>
-        <li>
-          Bonnaire Tony, Urfin Raphaël, Biroli Giulio, Mézard Marc (2025). "Why Diffusion Models Don't Memorize: The Role of Implicit Dynamical Regularization in Training". NeurIPS 2025 (Oral presentation, Best Paper Award). <a href="https://openreview.net/forum?id=BSZqpqgqM0" target="_blank" rel="noopener">OpenReview</a>
-        </li>
-      </ul>
-      <p><a href="publications.md">List of publications</a></p>
-    </section>
+      <section id="research">
+        <h2>Research</h2>
+        <p>
+          Broadly, I am interested in the <em>statistical physics of learning</em>: when can high-dimensional models generalize from finite data,
+          and what dynamical mechanisms make that possible? My current focus is on diffusion models, where I study:
+        </p>
+        <ul>
+          <li>Theoretical foundations of diffusion models as a stochastic dynamical system.</li>
+          <li>The generalization–memorization transition during training, and the implicit regularization that drives it.</li>
+        </ul>
+      </section>
 
+      <section id="publications">
+        <h2>Publications</h2>
+        <ol class="pub-list" reversed>
+          <li>
+            T.&nbsp;Bonnaire, <strong>R.&nbsp;Urfin</strong>, G.&nbsp;Biroli, M.&nbsp;Mézard.
+            <span class="pub-title">Why Diffusion Models Don’t Memorize: The Role of Implicit Dynamical Regularization in Training.</span>
+            <span class="pub-meta">
+              NeurIPS 2025
+              <span class="pub-badges">
+                <span class="badge" title="Oral presentation">Oral</span>
+                <span class="badge" title="Best Paper Award">Best Paper</span>
+              </span>
+              · <a href="https://openreview.net/forum?id=BSZqpqgqM0" target="_blank" rel="noopener">OpenReview</a>
+            </span>
+            <details class="bibtex">
+              <summary>BibTeX</summary>
+<pre>@inproceedings{bonnaire2025why,
+  title     = {Why Diffusion Models Don't Memorize: The Role of Implicit
+               Dynamical Regularization in Training},
+  author    = {Bonnaire, Tony and Urfin, Rapha\"el and Biroli, Giulio and
+               M{\'e}zard, Marc},
+  booktitle = {Advances in Neural Information Processing Systems 38 (NeurIPS)},
+  year      = {2025},
+  url       = {https://openreview.net/forum?id=BSZqpqgqM0}
+}</pre>
+            </details>
+          </li>
+        </ol>
+        <p style="font-size:0.9rem; color:var(--muted); margin-top:1rem;">
+          See also: <a href="https://scholar.google.com/citations?user=j7IYAOIAAAAJ&hl=fr" target="_blank" rel="noopener">Google Scholar</a>.
+        </p>
+      </section>
 
-    <section id="cv" class="card">
-      <h2>Resume</h2>
-      You can find my resume here
-      <p><a href="Resume_2025-1.pdf" target="_blank" rel="noopener">Download Resume</a></p>
-    </section>
+      <section id="cv">
+        <h2>CV</h2>
+        <p>
+          A current version of my CV is available as a PDF:
+          <a href="Resume_2025-1.pdf" target="_blank" rel="noopener">CV</a>.
+        </p>
+      </section>
 
-    <section id="contact" class="card">
-      <h2>Contact</h2>
-      <p>Email: name.surname at phys.ens.fr</a></p>
-      <p>Profiles:
-        <a href="https://scholar.google.com/citations?user=j7IYAOIAAAAJ&hl=fr" target="_blank" rel="noopener">Google Scholar</a> ·
-        <a href="https://openreview.net/profile?id=~Rapha%C3%ABl_Urfin1" target="_blank" rel="noopener">OpenReview</a> ·
-        <a href="https://www.linkedin.com/in/rapha%C3%ABl-urfin-812b53265" target="_blank" rel="noopener">LinkedIn</a> ·
-        <a href="https://github.com/URFIN-Raphael" target="_blank" rel="noopener">GitHub</a>
-      </p>
-    </section>
-  </main>
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>
+          <strong>Email.</strong> raphael.urfin <em>at</em> phys.ens.fr
+        </p>
+        <p>
+          <strong>Office.</strong> Laboratoire de Physique de l’ENS, 24 rue Lhomond, 75005 Paris.
+        </p>
+        <p>
+          <strong>Profiles.</strong>
+          <a href="https://scholar.google.com/citations?user=j7IYAOIAAAAJ&hl=fr" target="_blank" rel="noopener">Google Scholar</a> ·
+          <a href="https://openreview.net/profile?id=~Rapha%C3%ABl_Urfin1" target="_blank" rel="noopener">OpenReview</a> ·
+          <a href="https://github.com/URFIN-Raphael" target="_blank" rel="noopener">GitHub</a> ·
+          <a href="https://www.linkedin.com/in/rapha%C3%ABl-urfin-812b53265" target="_blank" rel="noopener">LinkedIn</a>
+        </p>
+      </section>
 
-  <footer class="site-footer">
-    <div class="wrap">
-      <small>© 2025 Raphaël Urfin · PhD student at École Normale Supérieure-PSL </small>
-    </div>
-  </footer>
+    </main>
+
+    <footer class="site-footer">
+      <small>© 2025–2026 Raphaël Urfin · Last updated May 2026</small>
+    </footer>
+
+  </div>
 </body>
 </html>
