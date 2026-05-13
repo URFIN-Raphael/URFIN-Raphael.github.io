@@ -19,16 +19,21 @@
       <div class="hero">
         <img class="avatar" src="assets/photo.jpg" alt="Photo of Raphaël Urfin" onerror="this.style.display='none'">
         <div class="hero-text">
-          <h1 class="site-title">Raphaël Urfin</h1>
+          <h1 class="site-title"><a href="index.html">Raphaël Urfin</a></h1>
           <p class="subtitle">PhD student, École Normale Supérieure — PSL</p>
           <nav class="main-nav" aria-label="Primary">
-            <a href="#about">About</a>
-            <a href="#news">News</a>
-            <a href="#research">Research</a>
-            <a href="#publications">Publications</a>
-            <a href="#cv">CV</a>
-            <a href="#contact">Contact</a>
+            <a href="index.html#about" class="current">About</a>
+            <a href="news.html">News</a>
+            <a href="publications.html">Publications</a>
           </nav>
+          <p class="quick-links">
+            <a href="mailto:raphael.urfin@phys.ens.psl.eu">Email</a><span class="sep">·</span>
+            <a href="cv.html">CV</a><span class="sep">·</span>
+            <a href="https://scholar.google.com/citations?user=j7IYAOIAAAAJ&hl=fr" target="_blank" rel="noopener">Scholar</a><span class="sep">·</span>
+            <a href="https://openreview.net/profile?id=~Rapha%C3%ABl_Urfin1" target="_blank" rel="noopener">OpenReview</a><span class="sep">·</span>
+            <a href="https://github.com/URFIN-Raphael" target="_blank" rel="noopener">GitHub</a><span class="sep">·</span>
+            <a href="https://www.linkedin.com/in/rapha%C3%ABl-urfin-812b53265" target="_blank" rel="noopener">LinkedIn</a>
+          </p>
         </div>
       </div>
     </header>
@@ -41,43 +46,35 @@
           I am a first-year PhD student at <a href="https://www.ens.psl.eu/" target="_blank" rel="noopener">École Normale Supérieure&nbsp;– PSL</a>
           in Paris, supervised by <a href="https://www.lpens.ens.psl.eu/membres/giulio-biroli/" target="_blank" rel="noopener">Giulio Biroli</a> (ENS) and
           <a href="https://www.marcmezard.fr" target="_blank" rel="noopener">Marc Mézard</a> (Bocconi University). I am based at the
-          <em>Centre de Sciences des Données</em> (CSD) and the <em>Laboratoire de Physique de l’ENS</em> (LPENS).
+          <em>Centre de Sciences des Données</em> and the <em>Laboratoire de Physique de l’ENS</em> (LPENS).
         </p>
-         <p>
-          Broadly I am interested in the theoretical foundations of Generative AI and in particlar diffusion models. I study how a neural network manages to learn the structural features of the target distribution without merely memorizing the training set.
+        <p>
+          My research aims to build a theoretical understanding of <strong>diffusion models</strong>, currently the dominant approach to generative AI,
+          using tools from statistical physics.
         </p>
       </section>
 
       <section id="news">
-        <h2>News</h2>
+        <h2><a href="news.html">News</a></h2>
         <ul class="news">
           <li>
             <time datetime="2025-12">Dec 2025</time>
-            <span>Our paper was featured on the websites of
+            <span>Our paper <em>Why Diffusion Models Don’t Memorize</em> received an <strong>Oral</strong> and a <strong>Best Paper Award</strong> at NeurIPS 2025.</span>
+          </li>
+          <li>
+            <time datetime="2025-12">Dec 2025</time>
+            <span>The paper was featured by
               <a href="https://www.lpens.ens.psl.eu/why-diffusion-models-in-generative-ai-dont-memorize-the-role-of-implicit-dynamical-regularization-in-training/?lang=en" target="_blank" rel="noopener">LPENS</a>,
               <a href="https://www.insu.cnrs.fr/fr/cnrsinfo/une-percee-scientifique-revele-pourquoi-lia-generative-apprend-si-bien" target="_blank" rel="noopener">CNRS&nbsp;INSU</a>, and
               <a href="https://www.ias.u-psud.fr/en/content/scientific-breakthrough-reveals-why-generative-ai-learns-so-effectively" target="_blank" rel="noopener">IAS Paris-Saclay</a>.
             </span>
           </li>
           <li>
-            <time datetime="2025-11">Nov 2025</time>
-            <span>Our paper <em>Why Diffusion Models Don’t Memorize: The Role of Implicit Dynamical Regularization in Training.</em> received an <strong>Oral</strong> and a <strong>Best Paper Award</strong> at NeurIPS 2025.</span>
-          </li>
-          <li>
             <time datetime="2025-09">Sept 2025</time>
             <span>Started my PhD at ENS–PSL with Giulio Biroli and Marc Mézard.</span>
           </li>
         </ul>
-      </section>
-
-
-
-
-      <section id="cv">
-        <h2>CV</h2>
-        <p>
-          <a href="Resume_2025.pdf" target="_blank" rel="noopener">CV</a>.
-        </p>
+        <a class="see-more" href="news.html">See all news →</a>
       </section>
 
       <section id="contact">
@@ -86,7 +83,7 @@
           <strong>Email.</strong> raphael.urfin <em>at</em> phys.ens.fr
         </p>
         <p>
-          <strong>Office.</strong> Centre de Sciences des Données,École Normale Supérieure,45 rue d'Ulm, Paris, 75005.
+          <strong>Office.</strong> Centre de Sciences des Données, 45 rue d'Ulm, 75005 Paris.
         </p>
         <p>
           <strong>Profiles.</strong>
