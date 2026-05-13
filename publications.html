@@ -7,6 +7,19 @@
   <meta name="description" content="Publications by Raphaël Urfin, PhD student at École Normale Supérieure (PSL). Statistical physics of diffusion models." />
   <link rel="stylesheet" href="assets/style.css" />
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ctext y='13' font-size='14' font-family='serif'%3ER%3C/text%3E%3C/svg%3E" />
+    <!-- KaTeX (LaTeX math rendering) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" crossorigin="anonymous"
+    onload="renderMathInElement(document.body, {
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '\\[', right: '\\]', display: true},
+        {left: '$', right: '$', display: false},
+        {left: '\\(', right: '\\)', display: false}
+      ],
+      throwOnError: false
+    });"></script>
 </head>
 <body>
   <div class="wrap">
@@ -27,7 +40,6 @@
             <a href="cv.html">CV</a><span class="sep">·</span>
             <a href="https://scholar.google.com/citations?user=j7IYAOIAAAAJ&hl=fr" target="_blank" rel="noopener">Scholar</a><span class="sep">·</span>
             <a href="https://openreview.net/profile?id=~Rapha%C3%ABl_Urfin1" target="_blank" rel="noopener">OpenReview</a><span class="sep">·</span>
-            <a href="https://github.com/URFIN-Raphael" target="_blank" rel="noopener">GitHub</a><span class="sep">·</span>
             <a href="https://www.linkedin.com/in/rapha%C3%ABl-urfin-812b53265" target="_blank" rel="noopener">LinkedIn</a>
           </p>
         </div>
@@ -63,7 +75,8 @@
             </span>
           </p>
           <p class="pub-abstract">
-            to do
+            In this work, we investigate the role of the training dynamics in the transition from generalization to memorization in Diffusion Models. Through extensive experiments and theoretical analysis, we identify two distinct timescales: an early time $\tau_\mathrm{gen}$ at which models begin to generate high-quality samples, and a later time $\tau_\mathrm{mem}$ beyond which memorization emerges. Crucially, we find that $\tau_\mathrm{mem}$ increases linearly with the training set size $n$, while $\tau_\mathrm{gen}$ remains constant. This creates a growing window of training times with $n$ where models generalize effectively, despite showing strong memorization if training continues beyond it. It is only when $n$ becomes larger than a model-dependent threshold that overfitting disappears at infinite training times.
+These findings reveal a form of implicit dynamical regularization in the training dynamics, which allow to avoid memorization even in highly overparameterized settings. 
           </p>
           <p class="pub-links">
             <a href="https://openreview.net/forum?id=BSZqpqgqM0" target="_blank" rel="noopener">OpenReview</a>
