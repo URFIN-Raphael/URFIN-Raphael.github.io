@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://urfin-raphael.github.io/sitemap.xml

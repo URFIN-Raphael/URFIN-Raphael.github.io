@@ -5,8 +5,29 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>CV — Raphaël Urfin</title>
   <meta name="description" content="CV of Raphaël Urfin, PhD student at École Normale Supérieure (PSL)." />
+  <meta property="og:title" content="CV — Raphaël Urfin" />
+  <meta property="og:description" content="Curriculum vitae of Raphaël Urfin, PhD student at École Normale Supérieure (PSL)." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://urfin-raphael.github.io/cv.html" />
+  <meta property="og:image" content="https://urfin-raphael.github.io/assets/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
   <link rel="stylesheet" href="assets/style.css" />
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ctext y='13' font-size='14' font-family='serif'%3ER%3C/text%3E%3C/svg%3E" />
+  <!-- KaTeX (LaTeX math rendering) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" crossorigin="anonymous"
+    onload="renderMathInElement(document.body, {
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '\\[', right: '\\]', display: true},
+        {left: '$', right: '$', display: false},
+        {left: '\\(', right: '\\)', display: false}
+      ],
+      throwOnError: false
+    });"></script>
 </head>
 <body>
   <div class="wrap">
@@ -15,12 +36,13 @@
       <div class="hero">
         <img class="avatar" src="assets/photo.jpg" alt="Photo of Raphaël Urfin" onerror="this.style.display='none'">
         <div class="hero-text">
-          <h1 class="site-title"><a href="index.html">Raphaël Urfin</a></h1>
+          <div class="site-title"><a href="index.html">Raphaël Urfin</a></div>
           <p class="subtitle">PhD student, École Normale Supérieure — PSL</p>
           <nav class="main-nav" aria-label="Primary">
             <a href="index.html#about">About</a>
             <a href="news.html">News</a>
             <a href="publications.html">Publications</a>
+            <a href="cv.html" class="current">CV</a>
           </nav>
            <p class="quick-links">
             <a href="mailto:raphael.urfin@phys.ens.psl.eu">Email</a><span class="sep">·</span>
@@ -93,7 +115,9 @@
           <div class="cv-entry-main">
             <div>Tony&nbsp;Bonnaire*, <strong>Raphaël&nbsp;Urfin*</strong>, Giulio&nbsp;Biroli, Marc&nbsp;Mézard.</div>
             <div class="cv-title"><em>Why Diffusion Models Don’t Memorize: The Role of Implicit Dynamical Regularization in Training.</em></div>
-            <div class="cv-where">NeurIPS 2025 — Best Paper Award (4 papers among 20,000+ submissions). <a href="https://openreview.net/forum?id=BSZqpqgqM0" target="_blank" rel="noopener">OpenReview</a></div>
+            <div class="cv-where">NeurIPS 2025 — <strong>Best Paper Award</strong> (4 papers among 20,000+ submissions).</div>
+            <div class="cv-where">Advances in Neural Information Processing Systems 38, 141266–141286. <a href="https://proceedings.neurips.cc/paper_files/paper/2025/hash/ceb7f3cc876a6dcb15130a645b5a4507-Abstract-Conference.html" target="_blank" rel="noopener">Proceedings</a></div>
+            <div class="cv-where">Extended version selected for the JSTAT special issue <em>Machine Learning 2026</em>: <em>J. Stat. Mech.</em> (2026) 084007.</div>
           </div>
           <div class="cv-entry-date">2025</div>
         </div>
@@ -107,6 +131,14 @@
         <h2>Conferences, workshops &amp; seminars</h2>
 
         <h3 class="cv-subhead">Invited talks</h3>
+
+        <div class="cv-entry">
+          <div class="cv-entry-main">
+            <div class="cv-title">Generative Memory Lab — Donders Institute, Radboud University (online)</div>
+            <div class="cv-where">Invited seminar on the memorization/generalization transition in diffusion models.</div>
+          </div>
+          <div class="cv-entry-date">Sep 2026</div>
+        </div>
 
         <div class="cv-entry">
           <div class="cv-entry-main">
@@ -320,7 +352,7 @@
     </main>
 
     <footer class="site-footer">
-      <small>© 2025–2026 Raphaël Urfin · Last updated May 2026</small>
+      <small>© 2025–2026 Raphaël Urfin · Last updated September 2026</small>
     </footer>
 
   </div>
