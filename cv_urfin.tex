@@ -1,0 +1,218 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% modern themes
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+%\usepackage[scale=0.8]{geometry}
+ \usepackage[left=2cm, right=2cm, top=1.cm]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvheadnamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+\usepackage{import}
+
+
+
+% personal data
+\name{Raphaël}{URFIN}
+\address{Centre de Sciences des Données, 45 rue d'Ulm}{75005 Paris}{France} % Professional Address
+                 % Optional
+                  % Professional Email
+                                         % Highly recommended for ML
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\makecvtitle
+
+
+
+\section{About me}
+I am a second year PhD student at École Normale Supérieure - PSL in Paris supervised by Giulio Biroli (ENS) and Marc Mézard (Bocconi University) working on the theory of diffusion models. My background is in theoretical physics.
+\section{Education}
+
+%\vspace{0.5cm}
+
+\begin{itemize}
+\item{\cventry{2025 - 2028(exp.)}{Subject: Generative Diffusion and Statistical Physics}{PhD in Physics}{ ENS-PSL, Paris}{}{LPENS \& Centre de Sciences des Données}{}}
+Supervisors: Giulio Biroli (ENS) and Marc Mézard(Bocconi University)
+\item{\cventry{2021-2025}{Interdisciplinary Diploma validating my studies at ENS.}{ENS Diploma}{ENS-PSL, Paris}{}{}}
+
+\item{\cventry{2023 - 2024}{ First Class Honors, 17.38/20}{M2 ICFP Theoretical Physics Track}{ENS-PSL, Paris}{}{}}
+Relevant classes: Advanced Statistical Physics, Disordered Systems, Machine Learning.
+\item{\cventry{2022 - 2023}{First Class Honors}{M1 ICFP}{ENS-PSL, Paris}{\textit{17.8/20}}{}}
+Relevant classes: Phase Transitions, Introduction to Quantum Field Theory, General Relativity.
+\item{\cventry{2021 - 2022}{First Class Honors}{Bachelor in Physics and Mathematics}{ENS-PSL, Paris}{\textit{17.38/20} (Physics) and \textit{16.36/20} (Mathematics)}{}}
+
+
+%\item{\cventry{2019 - 2021}{PCSI-PC*}{Classes Préparatoires}{Lycée Stanislas}{}{}}
+\end{itemize}
+
+
+%\vspace{0.5cm}
+
+
+
+
+\section{Publications}
+\textsuperscript{*} denotes equal contribution.
+
+\subsection{Preprints}
+\begin{itemize}
+\item{\textbf{Raphaël Urfin}\textsuperscript{*}, Tony Bonnaire\textsuperscript{*}, Giulio Biroli, Marc Mézard.\\
+\textit{Double Descent and Malign Overfitting in Diffusion Models}.\\
+arXiv:2609.26392 (2026). https://arxiv.org/abs/2609.26392
+}
+\end{itemize}
+
+\subsection{Conference Proceedings}
+\begin{itemize}
+\item{Tony Bonnaire\textsuperscript{*}, \textbf{Raphaël Urfin}\textsuperscript{*}, Giulio Biroli, Marc Mézard.\\
+\textit{Why Diffusion Models Don't Memorize: The Role of Implicit Dynamical Regularization in Training}.\\
+NeurIPS 2025, \textbf{ Best Paper Award (4 papers among +20000 submissions)}\\
+Advances in Neural Information Processing Systems (NeurIPS) 38, 141266-141286\\
+Selected for the JSTAT special issue \textit{Machine Learning 2026}: \textit{J. Stat. Mech.} (2026) 084007.
+}
+\end{itemize}
+
+
+\section{Conferences, Workshops and Seminars}
+\subsection{Invited Talks}
+\begin{itemize}
+\item{\cventry{September 2026}{Invited Seminar}{Generative Memory Lab, Donders Institute}{Radboud University, Netherlands (Online)}{}{}}
+
+\item{\cventry{April 2026}{Workshop}{LemanTH 2026}{Lausanne, Switzerland}{}{}}
+
+\item{\cventry{March 2026}{Group meeting (non-reciprocal $p$-spins)}{Vitelli's Group Meeting}{Online}{}{}}
+
+\item{\cventry{February 2026}{Invited Seminar (1 hour)}{Scattering Club, Data Science for Astrophysics group @ LPENS}{Online}{}{}}
+
+\item{\cventry{January 2026}{Invited Seminar (30 min)}{Voxel51 Best of NeurIPS 2025}{Online}{}{}}
+
+\item{\cventry{December 2025}{Invited Seminar (1 hour)}{Centre de Sciences des Données Internal Seminar}{Paris, France}{}{}}
+
+\item{\cventry{November 2025}{Invited Seminar (1 hour)}{Machine Learning \& Signal Processing @ ENS Lyon}{Lyon, France}{}{}}
+\end{itemize}
+
+\subsection{Contributed Talks}
+\begin{itemize}
+\item{\cventry{January 2026}{Conference (4-min flash talk)}{Journées de Physique Statistique 2026}{Paris, France}{}{}}
+
+\item{\cventry{December 2025}{Conference (poster + 13-min oral)}{EurIPS 2025}{Copenhagen, Denmark}{}{}}
+
+\item{\cventry{November 2025}{Workshop (poster + 10-min oral)}{NeurIPS in Paris 2025}{Paris, France}{}{}}
+
+\item{\cventry{July 2025}{Conference (15-min talk)}{StatPhys 29}{Florence, Italy}{}{}}
+
+\item{\cventry{July 2025}{Workshop (15-min talk)}{Youth in High Dimensions}{Trieste, Italy}{}{}}
+
+\item{\cventry{January 2025}{Conference (4-min flash talk)}{Journées de Physique Statistique 2025}{Paris, France}{}{}}
+\end{itemize}
+
+
+
+
+\subsection{Summer Schools}
+\begin{itemize}
+\item{\cventry{June 2025 \& June 2026}{Summer School}{Beg Rohu Summer School of Statistical Physics}{Beg Rohu, France}{}{
+\begin{itemize}
+\item \textbf{2026 Edition (Optimization and Control of Nonequilibrium Systems):} Lectures by international researchers (e.g. G. Peyré, G. Rotskoff ...). Presented a poster on Memorization/Generalization in diffusion models.
+\item \textbf{2025 Edition (Learning with Machines, Physics and Mind):} Lectures on Machine Learning and Statistical Physics by international researchers (e.g., Yann LeCun, Julia Kempe, Stéphane Mallat, Marc Mézard ...). Presented a poster on Memorization/Generalization in diffusion models.
+\end{itemize}}}
+
+
+\item{\cventry{July 2024}{Summer School}{Complex and Glassy Systems}{Cargese, France}{}{
+\begin{itemize}
+\item Lectures on Statistical Physics and interdisciplinary applications by international researchers (e.g. Marc Mézard, Eric Vanden-Eijnden, Valentina Ros, Guy Bunin).
+\end{itemize}}}
+\end{itemize}
+
+
+\section{Awards and Grants}
+\begin{itemize}
+    \item 2025: Recipient of one of the four best paper awards at NeurIPS 2025. \textbf{(4 papers out of 20,000+ submissions)}
+    \item 2025: CDSN, Competitive PhD scholarship for ENS students
+\end{itemize}
+\section{Reviewing}
+\begin{itemize}
+    \item Machine Learning Workshops: EurIPS 2025 Workshop Principles of Generative Modeling (PriGM), ICLR 2026 Workshop DeLTa, ICLR 2026 Workshop Sci4DL.
+    \item Machine Learning Journals: TMLR
+\end{itemize}
+
+\section{Skills}
+\begin{itemize}
+\item{Languages: French (Native), English (Fluent), Italian (Fluent).}
+\item{Software skills: Python (Pytorch), Matlab, Latex.  }
+\end{itemize}
+
+
+
+\section{Teaching Experience}
+\cvitem{}{
+  \begin{itemize}
+    \item TA Machine Learning (M2, Master ICFP, ENS-PSL), 11 hours, taught in English with Marc Lelarge and Leonardo Defilippis. Spring 2026.
+    \item TA Mathematics Tutoring for first-year students in Physics at ENS, 36 hours, taught in French with Amir-Kian Kashani-Poor. Fall 2025.
+    \item TA Stochastic Processes for Physics (M1 level, Master ICFP, ENS-PSL), 16 hours, taught in English with Marylou Gabrié. Fall 2025.
+    \item "Khôlles" (Preparation for the oral exams of French "Grandes Écoles") in Mathematics and Physics for Classes Préparatoires PC, Lycée Stanislas (2022–2024).
+    %\item Private tutoring in undergraduate mathematics (2021-)
+  \end{itemize}
+}
+\section{Relevant Experience}
+
+\begin{itemize}
+
+%\vspace{0.5cm}
+
+
+\item{\cventry{February 2025-May 2025}{Research Internship}{Statistical Physics and Diffusion Models}{Bocconi University, Milano, Italy}{}{\vspace{3pt}
+\begin{itemize}
+\item Supervisor: Marc Mézard, Department of Computing Sciences.
+\item Subject: The Memorization/Generalization transition in diffusion models.
+\item Resulted in a publication accepted at NeurIPS 2025
+\end{itemize}
+}}
+
+
+\item{\cventry{April 2024-January 2025}{Research Internship}{Statistical Physics and Diffusion Models}{École Normale Supérieure-PSL, France}{}{\vspace{3pt}
+\begin{itemize}
+\item Supervisor: Giulio Biroli, Centre de Sciences des Données.
+\item Subject: The effect of implicit regularization in diffusion models.
+\end{itemize}
+}}
+
+
+
+\item{\cventry{January-July 2023}{Research Internship}{Emergent behaviors in large ecosystems}{University of Cambridge, UK}{}{\vspace{3pt}
+\begin{itemize}
+\item Supervisor: Camille Scalliet, Soft Matter Group, Department of Applied Mathematics and Theoretical Physics.
+\item Using tools from disordered systems (Cavity Method, Random Matrix Theory...) to understand emergent collective behaviors in ecological systems.
+ \end{itemize}
+}}
+
+%\vspace{0.5cm}
+
+
+
+\end{itemize}
+\end{document}
+
+
+%% end of file `template.tex'.

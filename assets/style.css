@@ -256,6 +256,19 @@ a:hover {
   background: transparent;
 }
 
+/* Badge neutre pour les preprints (pas encore publiés) */
+.badge.badge-muted {
+  border-color: var(--muted);
+  color: var(--muted);
+}
+
+/* Note de contribution égale */
+.equal-note {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin: -0.2rem 0 1rem;
+}
+
 /* ------------------------------
    Publications — full page (figure + text)
 -------------------------------*/

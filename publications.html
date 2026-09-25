@@ -62,6 +62,55 @@
         <a href="https://openreview.net/profile?id=~Rapha%C3%ABl_Urfin1" target="_blank" rel="noopener">OpenReview</a>.
       </p>
 
+      <p class="equal-note"><em>*&nbsp;denotes equal contribution.</em></p>
+
+      <h2 class="year-heading">Preprints</h2>
+
+      <article class="pub-card">
+        <img class="pub-figure"
+             src="assets/figures/double_descent_sketch.png"
+             alt="Sketch of the test loss versus the number of parameters p: the interpolation peak moves from p ~ n to p ~ nm, and after the peak the loss settles on a plateau above its earlier minimum.">
+        <div class="pub-body">
+          <p class="pub-fulltitle">Double Descent and Malign Overfitting in Diffusion Models</p>
+          <p class="pub-authors">
+            <strong>Raphaël Urfin</strong>*,
+            <a href="https://tonybonnaire.com" target="_blank" rel="noopener">Tony Bonnaire</a>*,
+            <a href="https://www.lpens.ens.psl.eu/membres/giulio-biroli/" target="_blank" rel="noopener">Giulio Biroli</a>,
+            <a href="https://www.marcmezard.fr" target="_blank" rel="noopener">Marc Mézard</a>.
+          </p>
+          <p class="pub-venue">
+            Preprint, 2026
+            <span class="pub-badges">
+              <span class="badge badge-muted" title="Not yet peer-reviewed">Preprint</span>
+            </span>
+          </p>
+          <p class="pub-abstract">
+            Conventional wisdom in deep learning says overparameterization is benign: models with more parameters $p$ than training
+            samples $n$ still generalize well, and the test error follows a double-descent curve. Diffusion models seem to do the
+            opposite — overparameterization leads to memorization. Studying the empirical score-matching loss with a fixed number $m$
+            of noised realizations per sample, we show that the interpolation peak shifts from the classical $p \sim n$ to $p \sim nm$,
+            and that after the peak the test loss settles on a plateau higher than its earlier minimum — what we call
+            <em>malign overfitting</em>. Since $m \gg 1$ in practice, real diffusion models sit on the rising branch before the peak,
+            where the test loss already grows and the model starts memorizing. Overparameterization nonetheless remains beneficial
+            with optimal regularization.
+          </p>
+          <p class="pub-links">
+            <a href="https://arxiv.org/abs/2609.26392" target="_blank" rel="noopener">arXiv</a>
+          </p>
+          <details class="bibtex">
+            <summary>BibTeX</summary>
+<pre>@article{urfin2026double,
+  title   = {Double Descent and Malign Overfitting in Diffusion Models},
+  author  = {Urfin, Rapha\"el and Bonnaire, Tony and Biroli, Giulio and
+             M{\'e}zard, Marc},
+  journal = {arXiv preprint arXiv:2609.26392},
+  year    = {2026},
+  url     = {https://arxiv.org/abs/2609.26392}
+}</pre>
+          </details>
+        </div>
+      </article>
+
       <h2 class="year-heading">2025</h2>
 
       <article class="pub-card">
@@ -71,8 +120,8 @@
         <div class="pub-body">
           <p class="pub-fulltitle">Why Diffusion Models Don’t Memorize: The Role of Implicit Dynamical Regularization in Training</p>
           <p class="pub-authors">
-            <a href="https://tonybonnaire.com" target="_blank" rel="noopener">Tony Bonnaire</a>,
-            <strong>Raphaël Urfin</strong>,
+            <a href="https://tonybonnaire.com" target="_blank" rel="noopener">Tony Bonnaire</a>*,
+            <strong>Raphaël Urfin</strong>*,
             <a href="https://www.lpens.ens.psl.eu/membres/giulio-biroli/" target="_blank" rel="noopener">Giulio Biroli</a>,
             <a href="https://www.marcmezard.fr" target="_blank" rel="noopener">Marc Mézard</a>.
           </p>
