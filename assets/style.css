@@ -274,7 +274,7 @@ a:hover {
 -------------------------------*/
 .pub-card {
   display: grid;
-  grid-template-columns: 200px 1fr;
+  grid-template-columns: 280px 1fr;
   gap: 1.4rem;
   align-items: start;
   padding: 1.6rem 0;
@@ -332,12 +332,13 @@ a:hover {
   margin-top: 0.3rem;
 }
 
-@media (max-width: 640px) {
+/* En dessous de 720 px, la colonne texte deviendrait trop étroite : on empile */
+@media (max-width: 720px) {
   .pub-card {
     grid-template-columns: 1fr;
     gap: 0.9rem;
   }
-  .pub-card .pub-figure { max-width: 360px; }
+  .pub-card .pub-figure { max-width: 420px; }
 }
 
 /* ------------------------------

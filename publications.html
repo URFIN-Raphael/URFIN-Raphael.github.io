@@ -46,7 +46,6 @@
           </nav>
           <p class="quick-links">
             <a href="mailto:raphael.urfin@phys.ens.psl.eu">Email</a><span class="sep">·</span>
-            <a href="cv.html">CV</a><span class="sep">·</span>
             <a href="https://scholar.google.com/citations?user=j7IYAOIAAAAJ&hl=fr" target="_blank" rel="noopener">Scholar</a><span class="sep">·</span>
             <a href="https://openreview.net/profile?id=~Rapha%C3%ABl_Urfin1" target="_blank" rel="noopener">OpenReview</a><span class="sep">·</span>
             <a href="https://www.linkedin.com/in/rapha%C3%ABl-urfin-812b53265" target="_blank" rel="noopener">LinkedIn</a>
@@ -65,6 +64,98 @@
       <p class="equal-note"><em>*&nbsp;denotes equal contribution.</em></p>
 
       <h2 class="year-heading">Preprints</h2>
+
+      <article class="pub-card">
+        <img class="pub-figure"
+             src="assets/figures/spectral_bias_sketch.png"
+             alt="Sketch of the NTK Gram matrix spectrum: a bulk of large eigenvalues carrying the global features of the target (generalization) and a bulk of small eigenvalues aligned with sample-specific noise directions (memorization).">
+        <div class="pub-body">
+          <p class="pub-fulltitle">First Learn, Then Memorize: The Spectral Bias of Diffusion Models</p>
+          <p class="pub-authors">
+            <strong>Raphaël Urfin</strong>,
+            <a href="https://tonybonnaire.com" target="_blank" rel="noopener">Tony Bonnaire</a>,
+            <a href="https://www.lpens.ens.psl.eu/membres/giulio-biroli/" target="_blank" rel="noopener">Giulio Biroli</a>,
+            <a href="https://www.marcmezard.fr" target="_blank" rel="noopener">Marc Mézard</a>.
+          </p>
+          <p class="pub-venue">
+            Preprint, 2026
+            <span class="pub-badges">
+              <span class="badge badge-muted" title="Not yet peer-reviewed">Preprint</span>
+            </span>
+          </p>
+          <p class="pub-abstract">
+            Diffusion models trained on a finite dataset first learn to generate novel, high-quality samples and only much
+            later collapse onto their training set. We show that the training dynamics of the score are governed — exactly,
+            and at any width — by the Gram matrix of the Neural Tangent Kernel evaluated on the noisy training data, and that
+            using $m$ noise realizations per sample splits its spectrum into two bulks. The large eigenvalues carry the global
+            features of the target distribution; the smallest ones, created by the repeated noising, align with sample-specific
+            noise directions and set a memorization timescale parametrically larger in the dataset size $n$. We solve the
+            spectrum analytically in the lazy high-dimensional limit, and find the same two-bulk structure in convolutional
+            NTKs on CelebA and in finite-width U-Nets, where truncating the Gram matrix tunes the generalization–memorization
+            transition.
+          </p>
+          <p class="pub-links">
+            <a href="https://arxiv.org/abs/2609.35377" target="_blank" rel="noopener">arXiv</a>
+          </p>
+          <details class="bibtex">
+            <summary>BibTeX</summary>
+<pre>@misc{urfin2026learnmemorizespectralbias,
+      title={First Learn, Then Memorize: The Spectral Bias of Diffusion Models},
+      author={Raphaël Urfin and Tony Bonnaire and Giulio Biroli and Marc Mézard},
+      year={2026},
+      eprint={2609.35377},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2609.35377},
+}</pre>
+          </details>
+        </div>
+      </article>
+
+      <article class="pub-card">
+        <img class="pub-figure"
+             src="assets/figures/weighting_schedules.png"
+             alt="Overlap with the colour direction against training steps, for several weighting exponents α. The curves separate by α, and collapse onto a single curve once time is rescaled by λ(α) (inset).">
+        <div class="pub-body">
+          <p class="pub-fulltitle">Weighting Schedules Govern What and When Score-Based Generative Models Learn from Multimodal Data</p>
+          <p class="pub-authors">
+            Jérémie Klinger,
+            <strong>Raphaël Urfin</strong>,
+            <a href="https://www.lpens.ens.psl.eu/membres/giulio-biroli/" target="_blank" rel="noopener">Giulio Biroli</a>,
+            <a href="https://marylou-gabrie.github.io/" target="_blank" rel="noopener">Marylou Gabrié</a>.
+          </p>
+          <p class="pub-venue">
+            Preprint, 2026
+            <span class="pub-badges">
+              <span class="badge badge-muted" title="Not yet peer-reviewed">Preprint</span>
+            </span>
+          </p>
+          <p class="pub-abstract">
+            Score-based generative models are trained on a loss integrated over time $t$ with a weighting schedule $w(t)$.
+            Decomposing that loss into its single-time contributions, we show that the signal-to-noise ratio $\Lambda(t)$ sets
+            the rate at which each feature of a multimodal target — the mode directions and their relative weights — is acquired
+            during training. At high $\Lambda(t)$ all mode directions are learned together, on a single timescale insensitive to
+            their amplitudes, while the relative weights are not learned at all. Only near the speciation time, where
+            $\Lambda(t)\sim 1$, does every feature become learnable, each on its own timescale. This clarifies how the choice of
+            $w(t)$ shapes learning dynamics, and is confirmed on image and human genome haplotype generation.
+          </p>
+          <p class="pub-links">
+            <a href="https://arxiv.org/abs/2609.35322" target="_blank" rel="noopener">arXiv</a>
+          </p>
+          <details class="bibtex">
+            <summary>BibTeX</summary>
+<pre>@misc{klinger2026weightingschedulesgovernscorebased,
+      title={Weighting Schedules Govern What and When Score-Based Generative Models Learn from Multimodal Data},
+      author={Jérémie Klinger and Raphaël Urfin and Giulio Biroli and Marylou Gabrié},
+      year={2026},
+      eprint={2609.35322},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2609.35322},
+}</pre>
+          </details>
+        </div>
+      </article>
 
       <article class="pub-card">
         <img class="pub-figure"
