@@ -63,6 +63,55 @@
 
       <p class="equal-note"><em>*&nbsp;denotes equal contribution.</em></p>
 
+      <h2 class="year-heading">Conference &amp; journal papers</h2>
+
+      <article class="pub-card">
+        <img class="pub-figure"
+             src="assets/figures/Summary_diagram_tau_mem.png"
+             alt="Schematic: two timescales τ_gen and τ_mem separate generalization from memorization during diffusion-model training, with τ_mem scaling linearly with dataset size n.">
+        <div class="pub-body">
+          <p class="pub-fulltitle">Why Diffusion Models Don’t Memorize: The Role of Implicit Dynamical Regularization in Training</p>
+          <p class="pub-authors">
+            <a href="https://tonybonnaire.com" target="_blank" rel="noopener">Tony Bonnaire</a>*,
+            <strong>Raphaël Urfin</strong>*,
+            <a href="https://www.lpens.ens.psl.eu/membres/giulio-biroli/" target="_blank" rel="noopener">Giulio Biroli</a>,
+            <a href="https://www.marcmezard.fr" target="_blank" rel="noopener">Marc Mézard</a>.
+          </p>
+          <p class="pub-venue">
+            NeurIPS 2025
+            <span class="pub-badges">
+              <span class="badge" title="Oral presentation">Oral</span>
+              <span class="badge" title="Best Paper Award">Best Paper</span>
+            </span>
+          </p>
+          <p class="pub-abstract">
+            In this work, we investigate the role of the training dynamics in the transition from generalization to memorization in Diffusion Models. Through extensive experiments and theoretical analysis, we identify two distinct timescales: an early time $\tau_\mathrm{gen}$ at which models begin to generate high-quality samples, and a later time $\tau_\mathrm{mem}$ beyond which memorization emerges. Crucially, we find that $\tau_\mathrm{mem}$ increases linearly with the training set size $n$, while $\tau_\mathrm{gen}$ remains constant. This creates a growing window of training times with $n$ where models generalize effectively, despite showing strong memorization if training continues beyond it. It is only when $n$ becomes larger than a model-dependent threshold that overfitting disappears at infinite training times.
+These findings reveal a form of implicit dynamical regularization in the training dynamics, which allow to avoid memorization even in highly overparameterized settings. 
+          </p>
+          <p class="pub-links">
+            <a href="https://proceedings.neurips.cc/paper_files/paper/2025/hash/ceb7f3cc876a6dcb15130a645b5a4507-Abstract-Conference.html" target="_blank" rel="noopener">Proceedings</a>
+            <a href="https://iopscience.iop.org/article/10.1088/1742-5468/ae7e6a" target="_blank" rel="noopener">J. Stat. Mech.</a>
+            <a href="https://arxiv.org/abs/2505.17638" target="_blank" rel="noopener">arXiv</a>
+            <a href="https://openreview.net/forum?id=BSZqpqgqM0" target="_blank" rel="noopener">OpenReview</a>
+            <a href="https://github.com/tbonnair/Why-Diffusion-Models-Don-t-Memorize" target="_blank" rel="noopener">Code</a>
+          </p>
+          <details class="bibtex">
+            <summary>BibTeX</summary>
+<pre>@inproceedings{NEURIPS2025_ceb7f3cc,
+ author = {Bonnaire, Tony and Urfin, Rapha\"{e}l and Biroli, Giulio and Mezard, Marc},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {D. Belgrave and C. Zhang and H. Lin and R. Pascanu and P. Koniusz and M. Ghassemi and N. Chen},
+ pages = {141266--141286},
+ publisher = {Curran Associates, Inc.},
+ title = {Why Diffusion Models Don't Memorize: The Role of Implicit Dynamical Regularization in Training},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2025/file/ceb7f3cc876a6dcb15130a645b5a4507-Paper-Conference.pdf},
+ volume = {38},
+ year = {2025}
+}</pre>
+          </details>
+        </div>
+      </article>
+
       <h2 class="year-heading">Preprints</h2>
 
       <article class="pub-card">
@@ -198,54 +247,6 @@
       archivePrefix={arXiv},
       primaryClass={cs.LG},
       url={https://arxiv.org/abs/2609.26392},
-}</pre>
-          </details>
-        </div>
-      </article>
-
-      <h2 class="year-heading">2025</h2>
-
-      <article class="pub-card">
-        <img class="pub-figure"
-             src="assets/figures/Summary_diagram_tau_mem.png"
-             alt="Schematic: two timescales τ_gen and τ_mem separate generalization from memorization during diffusion-model training, with τ_mem scaling linearly with dataset size n.">
-        <div class="pub-body">
-          <p class="pub-fulltitle">Why Diffusion Models Don’t Memorize: The Role of Implicit Dynamical Regularization in Training</p>
-          <p class="pub-authors">
-            <a href="https://tonybonnaire.com" target="_blank" rel="noopener">Tony Bonnaire</a>*,
-            <strong>Raphaël Urfin</strong>*,
-            <a href="https://www.lpens.ens.psl.eu/membres/giulio-biroli/" target="_blank" rel="noopener">Giulio Biroli</a>,
-            <a href="https://www.marcmezard.fr" target="_blank" rel="noopener">Marc Mézard</a>.
-          </p>
-          <p class="pub-venue">
-            NeurIPS 2025
-            <span class="pub-badges">
-              <span class="badge" title="Oral presentation">Oral</span>
-              <span class="badge" title="Best Paper Award">Best Paper</span>
-            </span>
-          </p>
-          <p class="pub-abstract">
-            In this work, we investigate the role of the training dynamics in the transition from generalization to memorization in Diffusion Models. Through extensive experiments and theoretical analysis, we identify two distinct timescales: an early time $\tau_\mathrm{gen}$ at which models begin to generate high-quality samples, and a later time $\tau_\mathrm{mem}$ beyond which memorization emerges. Crucially, we find that $\tau_\mathrm{mem}$ increases linearly with the training set size $n$, while $\tau_\mathrm{gen}$ remains constant. This creates a growing window of training times with $n$ where models generalize effectively, despite showing strong memorization if training continues beyond it. It is only when $n$ becomes larger than a model-dependent threshold that overfitting disappears at infinite training times.
-These findings reveal a form of implicit dynamical regularization in the training dynamics, which allow to avoid memorization even in highly overparameterized settings. 
-          </p>
-          <p class="pub-links">
-            <a href="https://proceedings.neurips.cc/paper_files/paper/2025/hash/ceb7f3cc876a6dcb15130a645b5a4507-Abstract-Conference.html" target="_blank" rel="noopener">Proceedings</a>
-            <a href="https://arxiv.org/abs/2505.17638" target="_blank" rel="noopener">arXiv</a>
-            <a href="https://openreview.net/forum?id=BSZqpqgqM0" target="_blank" rel="noopener">OpenReview</a>
-            <a href="https://github.com/tbonnair/Why-Diffusion-Models-Don-t-Memorize" target="_blank" rel="noopener">Code</a>
-          </p>
-          <details class="bibtex">
-            <summary>BibTeX</summary>
-<pre>@inproceedings{NEURIPS2025_ceb7f3cc,
- author = {Bonnaire, Tony and Urfin, Rapha\"{e}l and Biroli, Giulio and Mezard, Marc},
- booktitle = {Advances in Neural Information Processing Systems},
- editor = {D. Belgrave and C. Zhang and H. Lin and R. Pascanu and P. Koniusz and M. Ghassemi and N. Chen},
- pages = {141266--141286},
- publisher = {Curran Associates, Inc.},
- title = {Why Diffusion Models Don't Memorize: The Role of Implicit Dynamical Regularization in Training},
- url = {https://proceedings.neurips.cc/paper_files/paper/2025/file/ceb7f3cc876a6dcb15130a645b5a4507-Paper-Conference.pdf},
- volume = {38},
- year = {2025}
 }</pre>
           </details>
         </div>

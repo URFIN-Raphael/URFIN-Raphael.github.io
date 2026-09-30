@@ -356,9 +356,20 @@ details.bibtex summary {
   user-select: none;
   display: inline-block;
   padding: 0.1rem 0;
+  list-style: none;              /* on retire le marqueur natif (invisible en inline-block)… */
 }
 
-details.bibtex summary::marker { color: var(--muted); }
+details.bibtex summary::-webkit-details-marker { display: none; }
+
+/* …et on dessine notre propre flèche, qui pivote à l'ouverture */
+details.bibtex summary::before {
+  content: "▸";
+  display: inline-block;
+  margin-right: 0.35em;
+  transition: transform 0.15s ease;
+}
+details.bibtex[open] summary::before { transform: rotate(90deg); }
+
 details.bibtex summary:hover { color: var(--accent); }
 
 details.bibtex pre {
@@ -394,6 +405,13 @@ details.bibtex pre {
 }
 .quick-links a:hover { border-bottom-color: currentColor; }
 .quick-links .sep { color: var(--muted); opacity: 0.6; }
+
+/* Sur petit écran les liens passent à la ligne : on masque les « · »
+   pour éviter qu'un séparateur orphelin ouvre la deuxième ligne */
+@media (max-width: 600px) {
+  .quick-links .sep { display: none; }
+  .quick-links { gap: 0.35rem 1.1rem; }
+}
 
 /* ------------------------------
    CV entries (two-column rows)
